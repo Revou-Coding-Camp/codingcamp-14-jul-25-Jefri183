@@ -1,0 +1,6 @@
+.banner-image {
+    background-image: url('https://picsum.photos/800/400');
+    background-size: cover;
+    height: 300px;
+    border-radius: 8px;
+}

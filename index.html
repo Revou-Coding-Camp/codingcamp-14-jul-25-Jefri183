@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Header Content -->
+    <header class="flex items-center justify-between p-4 bg-gray-200">
+        <div class="h-16 w-16 bg-[url(https://picsum.photos/200)] rounded-full"></div>
+        <nav>
+            <a class="border rounded-[4px] py-[4px] px-[8px]" href="#home">Home</a>
+            <a class="border rounded-[4px] py-[4px] px-[8px]" href="#our-profile">Our Profile</a>
+            <a class="border rounded-[4px] py-[4px] px-[8px]" href="#message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page Content -->
+        <section id="home-page">
+            <header>
+            <h1 class="text-2xl text-center font-bold">Welcome <span id="user-name"></span> to our website</h1>
+            </header>
+
+            <article>
+                <p class="text-center">We are glad to have you here!</p>
+                <div class="banner-image"></div>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- Our Profile Content -->
+        <section id="our-profile">
+            <h2 class="text-xl text-center font-semibold">Our Profile</h2>
+            <p class="text-gray-700 text-center">We are a team of dedicated professionals committed to delivering the best services to our clients.</p>
+            <p class="text-gray-700 text-center">Our mission is to provide high-quality solutions that meet the needs of our customers.</p>
+        </section>
+
+        <hr>
+
+        <!-- Message Us Content -->
+        <section id="message-us" class="flex justify-content-around align-items-center">
+            <form>
+                <header>
+                    <h2 class="flex">Message Us</h2>
+                </header>
+                <div>
+                    <label for="user-message" class="sr-only">Your Message</label>
+                    <textarea id="user-message" rows="4" class="border rounded-md p-2 w-full" placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="flex justify-end mt-4">
+                    <button type="button" onclick="sendMessage()" class="bg-blue-500 text-white rounded-md py-2 px-4">Send Message</button>
+                </div>
+            </form>
+
+            <div id="message-response" class="mt-4">
+                <h3 class="text-lg font-semibold">Chat Box</h3>
+                <div id="chat-box" class="border rounded-md p-2 h-48 overflow-y-auto">
+                    <!-- Chat messages will appear here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
