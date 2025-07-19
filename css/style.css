@@ -184,11 +184,16 @@ body {
 
 #message-us {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding: 40px 20px;
     background-color: #0D172A;
     color: white;
 }
 #contact-form {
+    flex: 1;
+    padding: 20px;
     max-width: 600px;
     margin-right: 40px;
 }
@@ -242,7 +247,13 @@ body {
     background-color: #f0f0f0;
 }
 
+#contact-form, #form-response {
+    flex: 1;
+    max-width: 600px;
+}
+
 #form-response {
+    box-sizing: border-box;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -250,7 +261,6 @@ body {
 }
 
 #form-response p {
-    width: 800px;
     font-size: 18px;
     color: #333;
     margin: 0;
@@ -264,3 +274,71 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+@media screen and (max-width: 768px) {
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    #main-header h1 {
+        font-size: 30px;
+    }
+
+    #main-header p {
+        font-size: 16px;
+    }
+
+    /* Visions & Missions */
+    .vision-statement,
+    .mission-statement {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vision-statement img,
+    .mission-statement img {
+        margin: 20px 0;
+    }
+
+    /* Team members stack */
+    #team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Contact Form */
+    #message-us {
+        flex-direction: column;
+    }
+
+    #contact-form {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #form-response {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    #form-response p {
+        width: 100%;
+    }
+
+    #name-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+    }
