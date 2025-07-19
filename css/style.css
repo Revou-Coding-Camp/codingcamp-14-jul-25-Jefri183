@@ -1,6 +1,266 @@
-.banner-image {
-    background-image: url('https://picsum.photos/800/400');
-    background-size: cover;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Navbar */
+#header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0D172A;
+}
+
+#header img {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Header */
+
+#main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 300px;
-    border-radius: 8px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0d1;
+    background: url('../assets/banner-image.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+#main-header h1 {
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 2px 2px 10px #000000
+}
+
+#main-header p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 10px #000000
+}
+
+/* About Us Section */
+
+.about-content {
+    padding: 40px 20px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-content p {
+    text-align: justify;
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Vision Mission */
+
+.vision-mission {
+    color: #fff;
+    margin-top: 40px;
+    background-color: #0D172A;
+    padding: 40px 20px;
+}
+
+/* Visi */
+.vision-statement {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.vision-statement img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.vision-statement h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}   
+
+/* Misi */
+.mission-statement {
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.mission-statement img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-right: 20px;
+}
+.mission-statement ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+.mission-statement li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.mission-statement h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Team Members Section */
+
+#members {
+    padding: 40px 20px;
+}
+
+#members h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member {
+    background-color: #0D172A;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member h4{
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: white;
+}
+
+.member p{
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: white;
+}
+
+/* Message Us */
+
+#message-us {
+    display: flex;
+    padding: 40px 20px;
+    background-color: #0D172A;
+    color: white;
+}
+#contact-form {
+    max-width: 600px;
+    margin-right: 40px;
+}
+#contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#name-input{
+    display: flex;
+    margin-bottom: 10px;
+    gap: 30px;
+}
+
+#name-input input[type=text] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact-form input[type=email],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: white;
+    color: #0D172A;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #f0f0f0;
+}
+
+#form-response {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#form-response p {
+    width: 800px;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+/* Footer */
+footer {
+    background-color: #0D172A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }

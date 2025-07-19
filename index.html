@@ -3,73 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeys Company</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-    <!-- Header Content -->
-    <header class="flex items-center justify-between p-4 bg-gray-200">
-        <img src="assets/revou.png" class="h-16 w-16 rounded-full"></img>
-        <nav>
-            <a class="border rounded-[4px] py-[4px] px-[8px]" href="#home">Home</a>
-            <a class="border rounded-[4px] py-[4px] px-[8px]" href="#our-profile">Our Profile</a>
-            <a class="border rounded-[4px] py-[4px] px-[8px]" href="#message-us">Message Us</a>
+<body>  
+    <header id="header">
+        <img src="assets/logo.png" alt="Jeys Company Logo">
+        <nav class="navbar">
+            <a href="#main-header">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#message-us">Message Us</a>
         </nav>
     </header>
-
-    <!-- Main Content -->
     <main>
-        <!-- Home Page Content -->
-        <section id="home-page">
-            <header>
-            <h1 class="text-2xl text-center font-bold">Welcome <span id="user-name"></span> to our website</h1>
-            </header>
+        <header id="main-header">
+            <h1>Hi <span id="user-name">User</span>, Welcome to Jeys Company</h1>
 
-            <article>
-                <p class="text-center">We are glad to have you here!</p>
-                <div class="banner-image"></div>
-            </article>
-
-        </section>
-
-        <hr>
-
-        <!-- Our Profile Content -->
-        <section id="our-profile">
-            <h2 class="text-xl text-center font-semibold">Our Profile</h2>
-            <p class="text-gray-700 text-center">We are a team of dedicated professionals committed to delivering the best services to our clients.</p>
-            <p class="text-gray-700 text-center">Our mission is to provide high-quality solutions that meet the needs of our customers.</p>
-        </section>
-
-        <hr>
-
-        <!-- Message Us Content -->
-        <section id="message-us" class="flex align-items-center">
-            <form>
-                <header>
-                    <h2 class="text-center">Message Us</h2>
-                </header>
-                <div>
-                    <label for="user-message" class="sr-only">Your Message</label>
-                    <textarea id="user-message" rows="4" class="border rounded-md p-2 w-full" placeholder="Type your message here..."></textarea>
+            <p>Kami menciptakan pengalaman digital yang indah, fungsional, dan berpusat pada pengguna. Sebagai studio UI/UX, kami membantu bisnis berinteraksi lebih baik dengan pengguna mereka melalui desain yang bermakna.</p>
+        </header>
+        <section id="about-us">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p><b>Jeys Company </b> adalah studio desain UI/UX yang berdedikasi untuk menciptakan pengalaman digital yang intuitif, estetis, dan berpusat pada pengguna. Sejak berdiri pada tahun 2020, kami telah membantu berbagai startup dan bisnis membentuk identitas digital mereka melalui desain yang strategis dan berdampak.</p>
+                <p>Kami menggabungkan riset pengguna, desain antarmuka yang estetis, serta prototyping interaktif untuk menghasilkan solusi yang bukan hanya cantik, tapi juga fungsional dan efisien.</p>
+            </div>
+            <div class="vision-mission">
+                <div class="vision-statement box">
+                    <div class="vision-text">
+                        <h3>Visi Kami</h3>
+                        <p>Menjadi studio desain UI/UX terkemuka yang membantu bisnis membangun pengalaman digital yang luar biasa dan bermakna.</p>
+                    </div>
+                    <img src="assets/vision.jpg" alt="Vision Image">
                 </div>
-                <div class="flex justify-end mt-4">
-                    <button type="button" onclick="sendMessage()" class="bg-blue-500 text-white rounded-md py-2 px-4">Send Message</button>
-                </div>
-            </form>
 
-            <div id="message-response" class="mt-4">
-                <h3 class="text-lg font-semibold">Chat Box</h3>
-                <div id="chat-box" class="border rounded-md p-2 h-48 overflow-y-auto">
-                    <!-- Chat messages will appear here -->
+                <div class="mission-statement box">
+                    <img src="assets/mission.jpg" alt="Mission Image">
+                    <div class="mission-text">
+                        <h3>Misi Kami</h3>
+                        <ul>
+                            <li>Mendesain antarmuka yang memadukan estetika dan fungsionalitas.</li>
+                            <li>Mengutamakan pendekatan berbasis data dan kebutuhan pengguna.</li>
+                            <li>Menyediakan layanan desain end-to-end: dari wireframe, UI design, prototyping hingga usability testing.</li>
+                            <li>Menjadi partner strategis bagi brand yang ingin meningkatkan kualitas pengalaman pengguna mereka.</li>
+                    </div>
+
+                </div>
+            </div>
+            <div id="members">
+                <h3>Tim Kami</h3>
+                <div id="team-members">
+                    <div class="member">
+                        <img src="assets/member-1.jpg" alt="Mohammad Jefri Yusuf">
+                        <h4>Mohammad Jefri Yusuf</h4>
+                        <p>UI/UX Designer</p>
+                    </div>
+                    <div class="member">
+                        <img src="assets/member-2.jpg" alt="Jane Smith">
+                        <h4>Jane Smith</h4>
+                        <p>UX Researcher</p>
+                    </div>
+                    <div class="member">
+                        <img src="assets/member-3.jpg" alt="Shin Soo Hyun">
+                        <h4>Shin Soo Hyun</h4>
+                        <p>Visual Designer</p>
+                    </div>
+                    <div class="member">
+                        <img src="assets/member-4.jpg" alt="Michael Brown">
+                        <h4>Michael Brown</h4>
+                        <p>Frontend Developer</p>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
+        <section id="message-us">
+            <div id="contact-form">
+                <h2>Message Us</h2>
+                <form>
+                    <div id="name-input">
+                        <div>
+                            <label for="first-name">First Name:</label><br>
+                            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                        </div>
+                        <div>
+                            <label for="last-name">Last Name:</label><br>
+                            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
 
-    <!-- Footer Content -->
-    <footer></footer>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea><br>
+
+                    <button type="button" onclick="sendMessage()">Send Message</button>
+                </form>
+            </div>
+            <div id="form-response">
+                <p>No Response Yet</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Jeys Company. All rights reserved.</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
